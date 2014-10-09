@@ -1,5 +1,10 @@
-function doClick(e) {
-    alert($.label.text);
-}
+var myItemsCollection = Alloy.Collections.item;
 
-$.index.open();
+var myItem = Alloy.createModel('item' , {
+	name : "bruschetta",
+	description : "calda calda..",
+	address : "vattelapesca 11 Milazzo"
+});
+
+myItemsCollection.add(myItem);
+myItem.save();
