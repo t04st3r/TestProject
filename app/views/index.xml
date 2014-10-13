@@ -9,6 +9,11 @@
 			title="Add Book"
 			onClick="addBook"
 			showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+			
+			<MenuItem id="listBooks"
+			title="Tutti i libri"
+			onClick="listBooks"
+			showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
 		</Menu>
 	</Window>
 </Alloy>
