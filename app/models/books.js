@@ -1,12 +1,14 @@
 exports.definition = {
 	config: {
 		columns: {
+			"id": "integer",
 		    "title": "text",
 		    "author": "text"
 		},
 		adapter: {
 			type: "sql",
-			collection_name: "books"
+			collection_name: "books",
+			idAttribute: "id"
 		}
 	},
 	extendModel: function(Model) {
