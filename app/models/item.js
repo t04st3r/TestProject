@@ -1,6 +1,7 @@
 exports.definition = {
 	config: {
 		columns: {
+			"id": "integer",
 		    "name": "text",
 		    "description": "text",
 		    "address" : "text"

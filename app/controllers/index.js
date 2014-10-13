@@ -1,12 +1,14 @@
 var myBooks = Alloy.Collections.books;
 
-var book = Alloy.createModel('books', {
+/*var book = Alloy.createModel('books', {
 	title : 'bruschetta',
 	author : 'calda calda..'
 });
 
 myBooks.add(book);
-book.save();
+book.save();*/
+
+myBooks.fetch(); // Fa il fetch dei books nel database, in realtà si può usare il binding nella vista
 
 if(OS_IOS) { 
    $.navGroupWin.open();
